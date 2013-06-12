@@ -253,7 +253,7 @@ void setup() {
   delay(100); //wait for gyro to "spin" up
   
   accelerometerGyroBias();
-  initBLDC();
+  initBLDC();  //initializing Brushless Motor 
 }
 
 void loop() {
@@ -268,7 +268,7 @@ void loop() {
   derajatServo();
   printData();
   
-  BLDCmove();
+  BLDCmove();  //Rotate brushless motor
  
    //delay(1);
 
